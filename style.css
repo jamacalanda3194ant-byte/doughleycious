@@ -1,0 +1,230 @@
+/* RESET (optional but helps consistency) */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fafafa;
+}
+
+/* ================= navigation bar ================= */
+.navbar {
+  background: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.nav-logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
+/* ================= para sa header image ================= */
+.header img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ================= para sa shop title ================= */
+.shop-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 40px 0 20px;
+}
+
+/* ================= grid lang to para sa products ================= */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* ================= ito yung card para sa products ================= */
+.product-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* para mag hover yung card */
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+/* image lang ng cookies */
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* flavors lang ng cookies */
+.product-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+/* price for cookies */
+.product-card .price {
+  color: #c47a2c;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* add to cart button */
+.product-card button {
+  width: 100%;
+  padding: 10px;
+  background: #5a3e2b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.product-card button:hover {
+  background: #3e2b1e;
+}
+/* quantity control */
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.quantity button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: #5a3e2b;
+  color: white;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.quantity button:hover {
+  background: #3e2b1e;
+}
+
+.quantity input {
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+/* ================= footer tanga ================= */
+.footer {
+  background: black;
+  color: white;
+  margin-top: 50px;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  text-align: center;
+}
+
+.footer-section h1 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.footer-section button {
+  padding: 10px 20px;
+  background: #5a3e2b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.footer-section button:hover {
+  background: #3e2b1e;
+}
+.socials i {
+  font-size: 30px;
+  color: white;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.socials i:hover {
+  transform: scale(1.2);
+}
+/* ================= HEADER OVERLAY ================= */
+.header {
+  position: relative;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.header-overlay h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.header-overlay p {
+  margin-bottom: 15px;
+}
+
+/* ORDER BUTTONS */
+.order-options {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.order-options button {
+  padding: 10px 15px;
+  border: none;
+  background: #5a3e2b;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.order-options button:hover {
+  background: #3e2b1e;
+}
